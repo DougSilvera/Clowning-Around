@@ -1,0 +1,35 @@
+{
+  "bookings": [
+    {
+      "parent": "bing bong bing bong",
+      "child": "fuck ya life",
+      "headCount": "224",
+      "address": "1234 trap house ln",
+      "hours": "2",
+      "date": "2021-12-15",
+      "timeStamp": 1639526400,
+      "id": 1
+    },
+    {
+      "parent": "kkkkk",
+      "child": "bing bong bing bong",
+      "headCount": "22",
+      "address": "123 yeah",
+      "hours": "2",
+      "date": "2021-12-13",
+      "timeStamp": 1639353600,
+      "id": 2
+    }
+  ],
+  "completions": [],
+  "clowns": [
+    {
+      "id": 1,
+      "name": "Buttons"
+    },
+    {
+      "id": 2,
+      "name": "Lollipop"
+    }
+  ]
+}
