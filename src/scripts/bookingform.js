@@ -1,4 +1,4 @@
-import { sendBooking } from "./dataAccess.js"
+import { deleteBooking, sendBooking } from "./dataAccess.js"
 
 export const bookingForm = () => {
     let html = `
