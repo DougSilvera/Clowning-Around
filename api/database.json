@@ -1,27 +1,57 @@
 {
   "bookings": [
     {
-      "parent": "bing bong bing bong",
-      "child": "fuck ya life",
-      "headCount": "224",
-      "address": "1234 trap house ln",
-      "hours": "2",
-      "date": "2021-12-15",
-      "timeStamp": 1639526400,
+      "parent": "",
+      "child": "",
+      "headCount": "",
+      "address": "",
+      "hours": "",
+      "date": "",
+      "timeStamp": null,
       "id": 1
     },
     {
-      "parent": "kkkkk",
-      "child": "bing bong bing bong",
-      "headCount": "22",
-      "address": "123 yeah",
-      "hours": "2",
-      "date": "2021-12-13",
-      "timeStamp": 1639353600,
+      "parent": "",
+      "child": "",
+      "headCount": "",
+      "address": "",
+      "hours": "",
+      "date": "",
+      "timeStamp": null,
       "id": 2
+    },
+    {
+      "parent": "",
+      "child": "",
+      "headCount": "",
+      "address": "",
+      "hours": "",
+      "date": "",
+      "timeStamp": null,
+      "id": 3
+    },
+    {
+      "parent": "",
+      "child": "",
+      "headCount": "",
+      "address": "",
+      "hours": "",
+      "date": "",
+      "timeStamp": null,
+      "id": 4
     }
   ],
-  "completions": [],
+  "completions": [
+    {
+      "clownId": "2",
+      "bookingId": "1",
+      "clownName": "Lollipop",
+      "completionDate": "",
+      "bookingChild": "",
+      "bookingHours": "",
+      "id": 1
+    }
+  ],
   "clowns": [
     {
       "id": 1,

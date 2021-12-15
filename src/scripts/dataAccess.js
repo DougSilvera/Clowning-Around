@@ -38,6 +38,10 @@ export const getClowns = () => {
     return applicationState.clowns.map((clown) => ({...clown}))
 }
 
+export const getCompletions = () => {
+  return applicationState.completions.map((completion) => ({...completion}))
+}
+
 export const sendBooking = (userBookingRequest) => {
   const fetchOptions = {
     method: "POST",
@@ -61,7 +65,7 @@ export const deleteBooking = (id) => {
 };
 
 export const sendCompletion = (userCompletion) => {
-    const fetchOptions = {
+    const fetchCompletions = {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -69,11 +73,12 @@ export const sendCompletion = (userCompletion) => {
       body: JSON.stringify(userCompletion),
     };
   
-    return fetch(`${API}/completions`, fetchOptions)
+    return fetch(`${API}/completions`, fetchCompletions)
       .then((response) => response.json())
       .then(() => {
         document.dispatchEvent(new CustomEvent("stateChanged"));
+      
       });
-  };
-
+};
+  
 

@@ -1,4 +1,4 @@
-import { sendBooking } from "./dataAccess.js"
+import { deleteBooking, sendBooking } from "./dataAccess.js"
 
 export const bookingForm = () => {
     let html = `
@@ -54,7 +54,7 @@ mainContainer.addEventListener("click", clickEvent => {
             address: userAddress,
             hours: userHours,
             date: userDate,
-            timeStamp: getTimestamp(userDate)
+            timeStamp: getTimestamp(userDate),
         }
         sendBooking(dataToSendToAPI)
     }
