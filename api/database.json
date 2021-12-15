@@ -1,47 +1,55 @@
 {
   "bookings": [
     {
-      "parent": "yoyoyoyoyoyo",
-      "child": "bing bong bing bong",
-      "headCount": "2",
-      "address": "123 your moms house",
-      "hours": "2",
-      "date": "2021-12-29",
-      "timeStamp": 1640736000,
+      "parent": "",
+      "child": "",
+      "headCount": "",
+      "address": "",
+      "hours": "",
+      "date": "",
+      "timeStamp": null,
       "id": 1
     },
     {
-      "parent": "iykyk",
-      "child": "fuck ya life",
-      "headCount": "22",
-      "address": "123 your dads house",
-      "hours": "4",
-      "date": "2021-12-20",
-      "timeStamp": 1639958400,
+      "parent": "",
+      "child": "",
+      "headCount": "",
+      "address": "",
+      "hours": "",
+      "date": "",
+      "timeStamp": null,
       "id": 2
+    },
+    {
+      "parent": "",
+      "child": "",
+      "headCount": "",
+      "address": "",
+      "hours": "",
+      "date": "",
+      "timeStamp": null,
+      "id": 3
+    },
+    {
+      "parent": "",
+      "child": "",
+      "headCount": "",
+      "address": "",
+      "hours": "",
+      "date": "",
+      "timeStamp": null,
+      "id": 4
     }
   ],
   "completions": [
     {
       "clownId": "2",
-      "bookingId": "2",
-      "clownName": "Lollipop",
-      "completionDate": "2021-12-20",
-      "id": 1
-    },
-    {
-      "clownId": "1",
-      "bookingId": "2",
-      "clownName": "Buttons",
-      "completionDate": "2021-12-20",
-      "id": 2
-    },
-    {
-      "clownId": "2",
       "bookingId": "1",
       "clownName": "Lollipop",
-      "completionDate": "2021-12-29",
-      "id": 3
+      "completionDate": "",
+      "bookingChild": "",
+      "bookingHours": "",
+      "id": 1
     }
   ],
   "clowns": [

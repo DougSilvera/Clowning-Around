@@ -13,18 +13,22 @@ export const Bookings = () => {
 
   const convertBookingToListElement = bookings.map((booking) => {
     return `
-        <li id="booking_entry">${booking.date} A ${booking.hours} hour long party for ${booking.child}</li>
+        <li id="booking_entry">${booking.date} A ${
+      booking.hours
+    } hour long party for ${booking.child}
             
-            <button class="booking__delete" id=booking--${booking.id}>Delete</button>
+            <button class="booking__delete" id=booking--${
+              booking.id
+            }>Delete</button>
             
             <select class="clowns" id="clowns">
             <option value="">Choose</option>
             ${clowns
               .map((clown) => {
-                return `<option id="clowns"  value="${booking.id}--${clown.id}--${booking.date}--${clown.name}">${clown.name}</option>`;
+                return `<option id="clowns"  value="${booking.id}--${clown.id}--${booking.date}--${clown.name}--${booking.child}--${booking.hours}">${clown.name}</option>`;
               })
               .join("")}
-            </select>`;
+            </select></li>`;
   });
   convertBookingToListElement.sort(bookings.timeStamp);
   html += convertBookingToListElement.join("");
@@ -36,19 +40,22 @@ const mainContainer = document.querySelector("#container");
 
 mainContainer.addEventListener("change", (event) => {
   if (event.target.id === "clowns") {
-    const [bookingId, clownId, bookingDate, completionClownName] = event.target.value.split("--");
-    const completionName = completionClownName
+    const [bookingId, clownId, bookingDate, completionClownName, bookingChild, bookingHrs] =
+      event.target.value.split("--");
+    const completionName = completionClownName;
     const completionBookingId = bookingId;
     const completionClownId = clownId;
-    
 
     const completion = {
       clownId: completionClownId,
       bookingId: completionBookingId,
       clownName: completionName,
-      completionDate: bookingDate
-    
+      completionDate: bookingDate,
+      bookingChild: bookingChild,
+      bookingHours: bookingHrs,
     };
     sendCompletion(completion);
+    
+    
   }
 });
