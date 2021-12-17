@@ -55,7 +55,9 @@ mainContainer.addEventListener("click", clickEvent => {
             hours: userHours,
             date: userDate,
             timeStamp: getTimestamp(userDate),
+            completed: false
         }
+        
         sendBooking(dataToSendToAPI)
     }
 })

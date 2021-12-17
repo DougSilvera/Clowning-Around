@@ -1,55 +1,97 @@
 {
   "bookings": [
     {
-      "parent": "",
-      "child": "",
-      "headCount": "",
-      "address": "",
-      "hours": "",
-      "date": "",
-      "timeStamp": null,
+      "completed": true,
       "id": 1
     },
     {
-      "parent": "",
-      "child": "",
-      "headCount": "",
-      "address": "",
-      "hours": "",
-      "date": "",
-      "timeStamp": null,
+      "completed": true,
       "id": 2
     },
     {
-      "parent": "",
-      "child": "",
-      "headCount": "",
-      "address": "",
-      "hours": "",
-      "date": "",
-      "timeStamp": null,
-      "id": 3
+      "completed": true,
+      "id": 4
     },
     {
-      "parent": "",
-      "child": "",
-      "headCount": "",
-      "address": "",
-      "hours": "",
-      "date": "",
-      "timeStamp": null,
-      "id": 4
+      "completed": true,
+      "id": 5
+    },
+    {
+      "completed": true,
+      "id": 6
+    },
+    {
+      "completed": true,
+      "id": 7
+    },
+    {
+      "completed": true,
+      "id": 8
     }
   ],
   "completions": [
     {
       "clownId": "2",
-      "bookingId": "1",
+      "bookingId": 1,
+      "clownName": "Lollipop",
+      "completionDate": "2021-12-23",
+      "bookingChild": "the child",
+      "bookingHours": "2",
+      "id": 1
+    },
+    {
+      "clownId": 1,
+      "bookingId": 2,
+      "clownName": "Buttons",
+      "completionDate": "2021-12-21",
+      "bookingChild": "grogu",
+      "bookingHours": "2",
+      "id": 2
+    },
+    {
+      "clownId": 1,
+      "bookingId": 4,
+      "clownName": "Buttons",
+      "completionDate": "",
+      "bookingChild": "",
+      "bookingHours": "",
+      "id": 3
+    },
+    {
+      "clownId": 2,
+      "bookingId": 5,
       "clownName": "Lollipop",
       "completionDate": "",
       "bookingChild": "",
       "bookingHours": "",
-      "id": 1
+      "id": 4
+    },
+    {
+      "clownId": 1,
+      "bookingId": 6,
+      "clownName": "Buttons",
+      "completionDate": "",
+      "bookingChild": "",
+      "bookingHours": "",
+      "id": 5
+    },
+    {
+      "clownId": 1,
+      "bookingId": 7,
+      "clownName": "Buttons",
+      "completionDate": "",
+      "bookingChild": "",
+      "bookingHours": "",
+      "id": 6
+    },
+    {
+      "clownId": 1,
+      "bookingId": 8,
+      "clownName": "Buttons",
+      "completionDate": "2021-12-23",
+      "bookingChild": "pkdnv",
+      "bookingHours": "2",
+      "id": 7
     }
   ],
   "clowns": [

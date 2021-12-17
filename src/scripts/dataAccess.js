@@ -81,4 +81,18 @@ export const sendCompletion = (userCompletion) => {
       });
 };
   
+export const sendBookingUpdate = (userBookingUpdate, id) => {
+  const fetchOptions = {
+    method: "PUT",
+    headers: {
+      "Content-Type": "application/json",
+    },
+    body: JSON.stringify(userBookingUpdate),
+  };
 
+  return fetch(`${API}/bookings/${id}`, fetchOptions)
+    .then((response) => response.json())
+    .then(() => {
+      document.dispatchEvent(new CustomEvent("stateChanged"));
+    });
+};
