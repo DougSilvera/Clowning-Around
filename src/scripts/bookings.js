@@ -1,8 +1,7 @@
 import {
-  deleteBooking,
   getBookings,
   getClowns,
-  sendBooking,
+  sendBookingUpdate,
   sendCompletion,
 } from "./dataAccess.js";
 
@@ -11,8 +10,8 @@ export const Bookings = () => {
   const clowns = getClowns();
   let html = `<ul>`;
 
-  const convertBookingToListElement = bookings.map((booking) => {
-    return `
+  const convertBookingToListElement = bookings.map((booking) =>  {
+   if (booking.completed === false) return `
         <li id="booking_entry">${booking.date} A ${
       booking.hours
     } hour long party for ${booking.child}
@@ -47,15 +46,18 @@ mainContainer.addEventListener("change", (event) => {
     const completionClownId = clownId;
 
     const completion = {
-      clownId: completionClownId,
-      bookingId: completionBookingId,
+      clownId: parseInt(completionClownId),
+      bookingId: parseInt(completionBookingId),
       clownName: completionName,
       completionDate: bookingDate,
       bookingChild: bookingChild,
       bookingHours: bookingHrs,
     };
+    const dataToUpdateBooking = {
+      completed: true
+  }
     sendCompletion(completion);
-    
+    sendBookingUpdate(dataToUpdateBooking, completion.bookingId)
     
   }
 });
